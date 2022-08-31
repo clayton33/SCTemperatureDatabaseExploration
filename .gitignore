@@ -47,3 +47,12 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# omit any scripts associated with obtaining data and analysis, at this time
+*.R
+*.png
+*.rda
+*.sql
+!app.R
+!azmpProductPolygons.rda
+!scTemperatureDatabase.rda
