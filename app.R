@@ -1,14 +1,14 @@
 library(shiny)
 library(leaflet)
 library(ggplot2)
-debugInitializing <- FALSE # make FALSE when running app
-if(debugInitializing){
+# debugInitializing <- FALSE # make FALSE when running app
+# if(debugInitializing){
   load('scTemperatureDatabase.rda')
   load('azmpProductPolygons.rda')
-} else {
-  load('../scTemperatureDatabase.rda') 
-  load('../azmpProductPolygons.rda')
-}
+# } else {
+#   load('../scTemperatureDatabase.rda') 
+#   load('../azmpProductPolygons.rda')
+# }
 
 # get useful things out of database for the app
 time <- as.POSIXct(as.numeric(df[['t_date']]), origin = '1970-01-01', tz = 'UTC')
